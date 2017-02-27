@@ -18,7 +18,7 @@ with open(fname, 'r') as f:
 			words = tweet.split()
 			#print(words)
 
-			terms_all = [term for term in words if len(term)>5]
+			terms_all = [term for term in words if len(term)>4]
 			count_all.update(terms_all)
 			#print(count_all.most_common(10))
 
