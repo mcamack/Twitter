@@ -8,6 +8,9 @@ Project to mine Twitter data and perform sentiment analysis. There are 2 files:
 * This uses the Natural Language Toolkit (NLTK) and parses through the saved json tweets, outputting the most popular "phrases" with greater than 4 characters. Phrases includes words, hashtags, links, @mentions and the script also saves retweets as individual tweets. In a way this is good, as it shows what is being "liked" or discussed more often and increments the counts of those words.
 * It then uses the NLTK to perform sentiment analysis on each individual tweet, saving the most positive and negative tweets. It then outputs these values and a list of the most common phrases.
 
+## access_tokens.py
+* This file contains access tokens for me to access Twitter. Added to the .gitignore file so this doesn't actually show up on public GitHub
+
 # Results
 In about 10 minutes, TweetGrabber.py saved 3692 tweets (22.8MB) when the search string was "Trump" ... it was about 5PM Pacific Time and I got a lot more tweets than when I did this closer to 11PM.  
 
