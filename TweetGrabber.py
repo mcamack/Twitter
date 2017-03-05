@@ -3,11 +3,8 @@ import tweepy
 from tweepy import OAuthHandler
 from tweepy import StreamListener
 from tweepy import Stream
+from access_tokens import *
 
-access_token = "show me YOUR access_token"
-access_token_secret = "show me YOUR access_token_secret"
-consumer_key = "show me YOUR consumer_key"
-consumer_secret = "show me YOUR consumer_secret"
 
 def process_or_store(tweet):
 	print(json.dumps(tweet))
@@ -33,15 +30,12 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 twitter_stream = Stream(auth, MyListener())
 search_term = sys.argv[2]
-twitter_stream.filter(track=['Trump'])
+twitter_stream.filter(track=[search_term])
 
-#search_results = tweepy.Cursor(api.search, q='wwe').items()
-#for tag in search_results:
-#	print(tag.text)
+
 
 #for status in tweepy.Cursor(api.home_timeline).items(1):
-#	print(status.text)
-
+	#print(status.text)
 
 #for friend in tweepy.Cursor(api.friends).items():
 	#process_or_store(friend._json)
