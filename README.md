@@ -1,6 +1,9 @@
 # Twitter
 
-Project to mine Twitter data and perform sentiment analysis. There are 2 files:
+Project to mine Twitter data and perform sentiment analysis.  
+Jupyter Notebook version: [jsonParser.ipynb](jsonParser.ipynb)
+
+There are 2 files:
 ## TweetGrabber.py <output_file> <Twitter_search_string>
 * This uses the tweepy package to open a Twitter listening stream and saves all tweets in json format to the output file
 
